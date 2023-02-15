@@ -213,9 +213,10 @@ p {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  width: 88%;
+  width: auto;
   margin-left: 0px;
-  float: left;
+  float: right;
+  clear: none;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
   -webkit-flex-direction: row;
@@ -225,10 +226,27 @@ p {
   -webkit-justify-content: flex-start;
   -ms-flex-pack: start;
   justify-content: flex-start;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
 }
 
 .brand-wrapper {
   width: 12%;
+}
+
+.brand-wrapper.w--current {
+  left: -150px;
+  width: 12%;
+  max-width: none;
+  background-image: url('../images/Logo_Name-BW.JPG');
+  background-position: 50% 50%;
+  background-size: contain;
+  background-repeat: repeat;
+  background-attachment: scroll;
+  -o-object-fit: fill;
+  object-fit: fill;
 }
 
 .section {
@@ -356,6 +374,24 @@ p {
   background-size: contain;
   background-repeat: repeat;
   background-attachment: scroll;
+}
+
+.slide-text {
+  position: absolute;
+  top:50%;
+  left:50%;
+  transform:translate(-50%, -50%); /* add your required prefixes */
+  padding:45px 0px;
+  /* border-style: solid;
+  border-width: 5px; */
+  height:150px;
+  /* border-style: solid;
+  border-width: 5px; */
+  width:50%;
+  text-align: center;
+  background-color: rgba(0,0,0,.75);
+  /* background-color: #000; */
+  /* opacity: .25; */
 }
 
 .press-title {
@@ -634,13 +670,13 @@ p {
   background-color: #1d1f21;
 }
 
-.padded-column {
+/* .padded-column {
   padding: 66px 32px;
-}
+} */
 
 .padded-column.picture {
   bottom: -25px;
-  height: 366px;
+  height: 430px;
   background-color: transparent;
   background-image: -webkit-gradient(linear, left top, left bottom, color-stop(100%, rgba(50, 50, 51, 0.2)), to(#fff)), url('../images/Cypher-Fleet-2.jpg');
   background-image: linear-gradient(180deg, rgba(50, 50, 51, 0.2) 100%, #fff), url('../images/Cypher-Fleet-2.jpg');
@@ -784,13 +820,23 @@ p {
 }
 
 .container {
-  display: block;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: auto;
+  max-width: none;
+  min-width: 0px;
   margin-right: auto;
   margin-left: auto;
-  -webkit-box-flex: 1;
-  -webkit-flex: 1 0 auto;
-  -ms-flex: 1 0 auto;
-  flex: 1 0 auto;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 auto;
+  -ms-flex: 0 auto;
+  flex: 0 auto;
 }
 
 .image {
@@ -895,6 +941,88 @@ p {
   background-image: url('../images/Cypherdesk-3.png');
   background-position: 50% 50%;
   background-size: contain;
+}
+
+.container-4 {
+  display: block;
+  -webkit-justify-content: space-around;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  -webkit-box-align: stretch;
+  -webkit-align-items: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  background-image: url('../images/CypherDesk.svg');
+  background-position: 50% 50%;
+  background-size: cover;
+  background-repeat: repeat;
+  background-attachment: scroll;
+  background-clip: border-box;
+  -webkit-text-fill-color: inherit;
+}
+
+.heading {
+  background-image: url('../images/CypherDesk.svg');
+  background-position: 0px 0px;
+  background-size: auto;
+}
+
+.container-5 {
+  position: static;
+  clear: left;
+}
+
+.div-block {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  float: left;
+  clear: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+}
+
+.column {
+  background-image: url('../images/CypherDesk.svg');
+  background-position: 50% 50%;
+  background-size: auto;
+}
+
+.column-3 {
+  background-color: #2c2f30;
+}
+
+.columns-2 {
+  background-color: #2c2f30;
+}
+
+.navbar-2 {
+  margin-top: 0px;
+  background-color: #000;
+}
+
+.body {
+  padding-top: 0px;
+}
+
+.image-3 {
+  margin-left: -10px;
 }
 
 @media screen and (max-width: 991px) {

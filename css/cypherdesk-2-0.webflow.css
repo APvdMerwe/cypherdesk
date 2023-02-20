@@ -670,9 +670,13 @@ p {
   background-color: #1d1f21;
 }
 
-/* .padded-column {
-  padding: 66px 32px;
-} */
+.padded-column {
+  /* padding: 66px 32px; */
+  padding-top: 20px;
+  padding-bottom: 76px;
+  padding-left: 30px;
+  padding-right: 40px;
+}
 
 .padded-column.picture {
   bottom: -25px;

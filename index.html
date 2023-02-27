@@ -19,7 +19,38 @@
   <link href="images/webclip.png" rel="apple-touch-icon">
 </head>
 <body class="body">
-  <div data-animation="default" data-collapse="medium" data-duration="400" data-easing="ease" data-easing2="ease" role="banner" class="navbar-2 w-nav">
+
+  <nav class="navi-bar">
+    <div class="logo-container">
+      <a href="#">
+        <img class="primary-cypherdesk-logo" src="images/CypherDesk.svg" />
+      </a>
+    </div>
+    <ul class="navbar-list" id="naviList">
+      <li class="navbar-list-item" id="nav-list-item1">
+        <a href="#home-section" class="nav-link w-nav-link">HOME</a>
+      </li>
+      <li class="navbar-list-item" id="nav-list-item2">
+        <a href="#what-section" class="nav-link w-nav-link">WHAT</a>
+      </li>
+      <li class="navbar-list-item" id="nav-list-item3">
+        <a href="#why-section" class="nav-link w-nav-link">WHY</a>
+      </li>
+      <li class="navbar-list-item" id="nav-list-item4">
+        <a href="#features-section" class="nav-link w-nav-link">FEATURES</a>
+      </li>
+      <li class="navbar-list-item" id="nav-list-item5">
+        <a href="#contact-us-section" class="nav-link w-nav-link">CONTACT</a>
+      </li>
+    </ul>
+    <div class="navbar-menu" id="toggleButton">
+      <div class="navbar-menu-line"></div>
+      <div class="navbar-menu-line"></div>
+      <div class="navbar-menu-line"></div>
+    </div>
+  </nav>
+
+  <!-- <div data-animation="default" data-collapse="medium" data-duration="400" data-easing="ease" data-easing2="ease" role="banner" class="navbar-2 w-nav">
     <div class="columns-2 w-row">
       <div class="column-2 w-col w-col-3"><img src="images/CypherDesk.svg" loading="lazy" width="302" alt="" class="image-3"></div>
       <div class="column-3 w-col w-col-9">
@@ -37,7 +68,8 @@
         </div>
       </div>
     </div>
-  </div>
+  </div> -->
+  
   <div id="home-section" class="section hero wf-section">
     <div class="w-container">
       <h1 class="small-heading">Streamline Your GPS Asset</h1>
@@ -47,13 +79,22 @@
     </div>
   </div>
   <div class="section press wf-section">
-    <div class="container-3 w-container"><img src="images/Lynx-Telematics-Logo.png" width="166" alt="" class="press-logo"><img src="images/Key-Telematics-Logo.png" width="121" alt="" class="press-logo"><img src="images/New-Holland-Logo.png" width="176" sizes="(max-width: 479px) 88vw, 176px" srcset="images/New-Holland-Logo-p-500.png 500w, images/New-Holland-Logo.png 1600w" alt="" class="press-logo"><img src="images/CyntrX-Logo.png" width="162" alt="" class="press-logo"><img src="images/Octo-Telematics-Logo.png" width="187" sizes="(max-width: 479px) 90vw, 187px" srcset="images/Octo-Telematics-Logo-p-500.png 500w, images/Octo-Telematics-Logo.png 914w" alt="" class="press-logo"><img src="images/SmartWitness-Logo.png" width="275" alt="" class="press-logo">
+      <ul class="logo-list">
+        <li class="logo-list-item"><img src="images/Lynx-Telematics-Logo.png" width="166" alt="" class="press-logo"></li>
+        <li class="logo-list-item"></li><img src="images/Key-Telematics-Logo.png" width="121" alt="" class="press-logo"></li>
+        <li class="logo-list-item"></li><img src="images/New-Holland-Logo.png" width="176" sizes="(max-width: 479px) 88vw, 176px" srcset="images/New-Holland-Logo-p-500.png 500w, images/New-Holland-Logo.png 1600w" alt="" class="press-logo"></li>
+        <li class="logo-list-item"></li><img src="images/CyntrX-Logo.png" width="162" alt="" class="press-logo"></li>
+        <li class="logo-list-item"></li><img src="images/Octo-Telematics-Logo.png" width="187" sizes="(max-width: 479px) 90vw, 187px" srcset="images/Octo-Telematics-Logo-p-500.png 500w, images/Octo-Telematics-Logo.png 914w" alt="" class="press-logo"></li>
+        <li class="logo-list-item"></li><img src="images/SmartWitness-Logo.png" width="275" alt="" class="press-logo"></li>
+      </ul>
+
+    <!-- <div class="container-3 w-container"><img src="images/Lynx-Telematics-Logo.png" width="166" alt="" class="press-logo"><img src="images/Key-Telematics-Logo.png" width="121" alt="" class="press-logo"><img src="images/New-Holland-Logo.png" width="176" sizes="(max-width: 479px) 88vw, 176px" srcset="images/New-Holland-Logo-p-500.png 500w, images/New-Holland-Logo.png 1600w" alt="" class="press-logo"><img src="images/CyntrX-Logo.png" width="162" alt="" class="press-logo"><img src="images/Octo-Telematics-Logo.png" width="187" sizes="(max-width: 479px) 90vw, 187px" srcset="images/Octo-Telematics-Logo-p-500.png 500w, images/Octo-Telematics-Logo.png 914w" alt="" class="press-logo"><img src="images/SmartWitness-Logo.png" width="275" alt="" class="press-logo">
       <div class="press-image-wrapper"></div>
       <div class="press-image-wrapper"></div>
       <div class="press-image-wrapper"></div>
       <div class="press-image-wrapper"></div>
       <div class="press-image-wrapper"></div>
-    </div>
+    </div> -->
   </div>
   <div data-delay="5000" data-animation="slide" class="w-slider" data-autoplay="true" data-easing="ease" data-hide-arrows="false" data-disable-swipe="false" data-autoplay-limit="0" data-nav-spacing="3" data-duration="500" data-infinite="true">
     <div class="w-slider-mask">
@@ -272,4 +313,35 @@
   <script src="js/webflow.js" type="text/javascript"></script>
   <!-- [if lte IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/placeholders/3.0.2/placeholders.min.js"></script><![endif] -->
 </body>
+
+<script>
+  const toggleButton = document.getElementById('toggleButton');
+  const naviList = document.getElementById('naviList');
+  const listItem1 = document.getElementById('nav-list-item1');
+  const listItem2 = document.getElementById('nav-list-item2');
+  const listItem3 = document.getElementById('nav-list-item3');
+  const listItem4 = document.getElementById('nav-list-item4');
+  const listItem5 = document.getElementById('nav-list-item5');
+
+  toggleButton.addEventListener('click', () => {
+    naviList.classList.toggle('active');
+  })
+
+  listItem1.addEventListener('click', () => {
+    naviList.classList.toggle('active');
+  })
+  listItem2.addEventListener('click', () => {
+    naviList.classList.toggle('active');
+  })
+  listItem3.addEventListener('click', () => {
+    naviList.classList.toggle('active');
+  })
+  listItem4.addEventListener('click', () => {
+    naviList.classList.toggle('active');
+  })
+  listItem5.addEventListener('click', () => {
+    naviList.classList.toggle('active');
+  })
+</script>
+
 </html>

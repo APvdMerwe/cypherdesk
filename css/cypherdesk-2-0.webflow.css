@@ -168,12 +168,12 @@ p {
 }
 
 .nav-link:hover {
-  background-color: #000;
+  background-color: #3f4345;
   color: #fff;
 }
 
 .nav-link.w--current {
-  background-color: #3f4345;
+  /* background-color: #3f4345; */
   color: #fff;
 }
 
@@ -1046,9 +1046,9 @@ p {
     background-color: #5f6266;
   }
 
-  .nav-link.w--current {
+  /* .nav-link.w--current {
     background-color: #005282;
-  }
+  } */
 
   .nav-link.right {
     width: 100%;
@@ -1404,3 +1404,103 @@ p {
   }
 }
 
+/*************************************************************/
+
+.navi-bar {
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 20px;
+  /* position: fixed;
+  width: 97%; */
+}
+
+.navi-bar ul {
+  margin-bottom: 0px;
+}
+
+.navbar-list {
+  list-style-type: none;
+}
+
+.navbar-list .navbar-list-item {
+  display: inline-block;
+  /* padding: 20px 10px; */
+}
+
+.navi-bar a {
+  color: white;
+  text-decoration: none;
+}
+
+.primary-cypherdesk-logo {
+  height: 70px;
+  left: -20px;
+  position: relative;
+}
+
+.navbar-menu {
+  display: none;
+}
+
+.navbar-menu-line {
+  width: 20px;
+  height: 3px;
+  background-color: white;
+  margin-bottom: 4px;
+}
+
+@media all and (max-width: 480px) {
+  .navi-bar {
+    flex-direction: column;
+    position: relative;
+  }
+
+  .nnavi-bar .logo-container {
+    width: 100%;
+  }
+
+  .navbar-menu {
+    display: block;
+    position: absolute;
+    right: 15px;
+    /* top: 15px; */
+  }
+
+  .navbar-list {
+    list-style-type: none;
+    width: 100%;
+    text-align: center;
+    padding-top: 10px;
+    display: none;
+  }
+
+  .navbar-list .navbar-list-item {
+    display: block;
+    border-top: 1px solid white;
+  }
+
+  .active {
+    display: block;
+  }
+
+  .logo-container {
+    padding-left: 0%;
+    margin-left: 0%;
+  }
+
+  .logo-list {
+    padding-left: 0px;
+  }
+}
+
+.logo-list-item {
+  display: inline-block;
+}
+
+.logo-list {
+  text-align: center;
+}
+/*************************************************************/
